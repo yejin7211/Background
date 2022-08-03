@@ -1,0 +1,153 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: lightgray; 
+}
+
+.card {
+	position: fixed;
+	transform: translate(10%,30%);
+	width: 840px;
+	background-color: white;
+	padding: 24px;
+	border-radius: 10px;
+}
+
+.card-image {
+	position: relative;
+	background-image: url(./assets/img-house.jpg);
+	width: 300px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-radius: 6px;
+	margin-right: 24px;
+}
+
+.like-button {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width:  36px;
+	height: 36px;
+	border-radius: 50%;
+	background-image: url("./assets/icon-favorite.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: none;
+    cursor: pointer;	
+}
+
+.plus-badge {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: white;
+	background-color: #92174D;
+	border-radius: 4px;
+	text-transform: uppercase;
+	padding: 1px 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+    cursor: pointer;		
+}
+
+.property-type span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #7D858F;
+}
+
+.property-rate::before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url("./assets/icon-star.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	top: 2px;
+	margin-right: 4px;
+}
+
+.property-rate {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.property-rate strong {
+	color: #151B26;
+	margin-right: 1px;
+}
+
+.property-rate span {
+	color: #7D858F;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-title {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 32px;
+	margin-bottom: 16px;
+    cursor: pointer;		
+}
+
+.property-detail {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #7D858F;
+}
+
+.sr-only {
+	position: absolute;
+	z-index: -100;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.property-detail div:first-child {
+	margin-bottom: 8px;                                                               
+}
+
+.property-detail dd span::after {
+	content: '*';
+	margin: 0 5px;
+	display: inline-block;
+}
+
+.property-detail dd span:last-child::after {
+	content: '';
+	display: inline-block;
+}
+
+.card {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card-content {
+  flex-grow: 1;
+}
